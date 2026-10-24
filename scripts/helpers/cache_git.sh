@@ -21,7 +21,6 @@ elif [[ -n "$CI" ]]; then
   echo ">> CI environment detected. Forcing the git repository to be re-fetched."
 else
   echo ">> Using cached git repository in $TARGET_DIR"
-  exit 0
 fi
 
 echo ">> Fetching $GIT_SHA into $TARGET_DIR"
